@@ -11,7 +11,6 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
     <nav>
       <div className="nav-bar-parent">
         <div className="nav-bar">
-         
 
           <button
             className="mobile-menu-btn"

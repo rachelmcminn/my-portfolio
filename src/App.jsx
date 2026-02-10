@@ -4,7 +4,7 @@ import './index.css'
 import { LoadingScreen } from './components/LoadingScreen'
 import { Navbar } from './components/Nav'
 import { Home } from './sections/Home'
-import { About } from './sections/about';
+import { About } from './sections/About';
 import { Projects } from './sections/Projects'
 import { Footer } from './components/Footer'
 import { FadeSection } from './components/FadeSection'
@@ -31,6 +31,7 @@ function App() {
     <>
     <div ref={cursorRef} className="cursor"></div>
 
+    {/* TODO fix loading screen keeps coming up even when going back, memoize  */}
     {!isLoaded && 
     <LoadingScreen onComplete={() => setIsLoaded(true)} 
     />} 
@@ -43,7 +44,7 @@ function App() {
       <Navbar />
       <div className='main-content'>
       <FadeSection> <Home /> </FadeSection>
-     <FadeSection> <About /></FadeSection>
+      <FadeSection> <About /></FadeSection>
       <FadeSection> <Projects /> </FadeSection>
       <Footer/>
 

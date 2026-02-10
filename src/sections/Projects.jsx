@@ -4,9 +4,13 @@ import ProjectCard from "../components/ProjectCard.jsx";
 import ProjectImgJSM from "../assets/img/princess-mononok-rest.jpg"
 
 
-
 export const Projects = () => {
   const projects = [
+    {
+      id: "yippee-sudoku",
+      title: "Yippee Sudoku!",
+      description: "sudoku but cool",
+    },
     {
       id: "intune-connect",
       title: "JSM Intune Connect",
@@ -18,8 +22,8 @@ export const Projects = () => {
       description: "Beep beep",
     },
     {
-      id: "three",
-      title: "Three",
+      id: "four",
+      title: "Four",
       description: "Beep boop ",
     },
     
