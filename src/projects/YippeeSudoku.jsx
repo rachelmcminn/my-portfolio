@@ -1,18 +1,18 @@
 import React from "react";
+import { MoreProjects } from "../components/MoreProjects";
 
 export const YippeeSudoku = () => {
 
     return (
-        <section id="project-page" className="content-section">
+        <div id="project-page" className="content-section">
            <h1 className="section-title">this is the sudoku page</h1>
 
-         <p>
-            overview
-         </p>
+            <p>
+                Overview
+            </p>
         
-          
-           
-        </section>
+        <MoreProjects currentProjectId='yippee-sudoku' /> 
+        </div>
     )
 
     

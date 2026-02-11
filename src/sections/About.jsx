@@ -26,7 +26,4 @@ export const About = () => {
            
         </section>
     )
-
-    
-
 }

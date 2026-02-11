@@ -56,7 +56,7 @@ p,div {
   min-height: 100vh;
 }
 
-section {
+.content-section {
   padding: 6em 3em;
   height: 100%;
   box-sizing: border-box; 
@@ -303,6 +303,29 @@ section#home {
   gap: 24px;
 }
 
+.more-projects {
+  margin-top: 10rem;
+  padding: 2rem 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.more-projects .section-title {
+  margin-bottom: 2rem;
+}
+
+.view-all-link {
+  display: inline-block;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: var(--accent-color);
+  transition: transform 0.2s;
+}
+
+.view-all-link:hover {
+  transform: translateX(5px);
+}
+
 /* ---------------------- about -----------------------*/
 .headshot {
   width: 200px;
@@ -314,8 +337,6 @@ section#home {
   flex-direction: row;
   gap: 32px;
 }
-
-
 
 
 /*---------------------- contact ---------------------*/
@@ -330,7 +351,6 @@ section#contact > div {
 }
 
 
-
 /* -------------------------- footer ---------------------------- */
 .footer {
   margin-top: 150px;
@@ -338,7 +358,9 @@ section#contact > div {
   background-color: #2a1725;
 }
 
-
+.footer-content {
+  margin: 24px;
+}
 
 
 /************************************** BREAKPOINTS *********************************/

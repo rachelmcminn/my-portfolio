@@ -1,16 +1,17 @@
 import React from "react";
+import { MoreProjects } from "../components/MoreProjects";
+
 
 export const IntuneConnect = () => {
 
     return (
-        <section id="project-page" className="content-section">
+        <div id="project-page" className="content-section">
            <h1 className="section-title">this is the intune connect page</h1>
 
          
-         
           
-           
-        </section>
+        <MoreProjects currentProjectId='intune-connect' /> 
+        </div>
     )
 
     

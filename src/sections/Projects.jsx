@@ -2,39 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ProjectCard from "../components/ProjectCard.jsx";
 import ProjectImgJSM from "../assets/img/princess-mononok-rest.jpg"
+import { projectsData } from "../data/projects.js"
 
 
 export const Projects = () => {
-  const projects = [
-    {
-      id: "yippee-sudoku",
-      title: "Yippee Sudoku!",
-      description: "sudoku but cool",
-    },
-    {
-      id: "intune-connect",
-      title: "JSM Intune Connect",
-      description: "Beep beep",
-    },
-    {
-      id: "gremlinizer",
-      title: "Gremlinizer",
-      description: "Beep beep",
-    },
-    {
-      id: "four",
-      title: "Four",
-      description: "Beep boop ",
-    },
-    
-  ];
-
   return (
     <section id="projects" className="content-section">
       <div>
         <h1 className="section-title">// projects</h1>
         <div className="project-grid">
-          {projects.map((project) => (
+          {projectsData.map((project) => (
             <Link key={project.id} to={`/projects/${project.id}`}>
             <ProjectCard
               title={project.title}
