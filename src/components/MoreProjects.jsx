@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import ProjectCard from "./ProjectCard";
 import { projectsData } from "../data/projects";
 
+// TODO - only show up to 4 relevant projects - use tags to filter
+
 export const MoreProjects = ({ currentProjectId }) => {
   // filter out the current project
   const otherProjects = projectsData.filter(
