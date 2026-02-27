@@ -7,18 +7,29 @@ import { Navbar } from './components/Nav'
 import { Home } from './sections/Home'
 import { About } from './sections/About';
 import { Projects } from './sections/Projects'
+import { Contact } from './sections/Contact'
 import { Footer } from './components/Footer'
 import { FadeSection } from './components/FadeSection'
 // import project pages
 import { IntuneConnect } from './projects/IntuneConnect'
 import { Gremlinizer } from './projects/Gremlinizer'
 import { YippeeSudoku } from './projects/YippeeSudoku'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+/* import all the icons in Free Solid, Free Regular, and Brands styles */
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { far } from '@fortawesome/free-regular-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+
+library.add(fas, far, fab)
+
 
 const MainPage = () => (
   <div className='main-content'>
     <FadeSection><Home /></FadeSection>
     <FadeSection><About /></FadeSection>
     <FadeSection><Projects /></FadeSection>
+    <FadeSection><Contact /></FadeSection>
     <Footer />
   </div>
 );
@@ -65,12 +76,8 @@ function App() {
         {isLoaded && (
           <div>
             <Navbar />
-            <Routes>
-              <Route path="/" element={<MainPage />} />
-              <Route path="/projects/intune-connect" element={<IntuneConnect />} />
-              <Route path="/projects/gremlinizer" element={<Gremlinizer />} />
-              <Route path="/projects/yippee-sudoku" element={<YippeeSudoku />} />
-            </Routes>
+            <MainPage />
+           
           </div>
         )}
       </div>

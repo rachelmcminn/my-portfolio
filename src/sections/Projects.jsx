@@ -12,13 +12,16 @@ export const Projects = () => {
         <h1 className="section-title">// projects</h1>
         <div className="project-grid">
           {projectsData.map((project) => (
-            <Link key={project.id} to={`/projects/${project.id}`}>
             <ProjectCard
               title={project.title}
+              role={project.role}
               description={project.description}
-              image={project.image}
+              builtWith={project.builtWith}
+              githubRepoURL={project.githubRepoURL}
+              figmaURL={project.figmaURL}
+              liveURL={project.liveURL}
+              appleStoreURL={project.appleStoreURL}
             />
-            </Link>
           ))}
         </div>
       </div>

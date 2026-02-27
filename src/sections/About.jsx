@@ -19,8 +19,13 @@ export const About = () => {
             
                 <p> Outside of work, I love being outside, reading, spending time with family and friends, and playing video games (and streaming them too!)</p>
           
+                <a href="mailto:racminn@gmail.com">
+                    <button className="btn btn-primary">Say Hi</button>
+                </a>
+                <a href="">
+                    <button className="btn btn-secondary">View Resume</button>
+                </a>
                 </div>
-            
            </div>
           
            

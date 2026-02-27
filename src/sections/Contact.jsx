@@ -1,14 +1,15 @@
 import React from "react";
+import { useState } from "react";
 
 export const Contact = () => {
 
     return (
-        <section id="contact">
+        <div id="contact" className="content-section">
             <div>
-                <h1>contact!</h1> 
+                <h1>// contact</h1> 
             </div>
            
-        </section>
+        </div>
     )
 
     

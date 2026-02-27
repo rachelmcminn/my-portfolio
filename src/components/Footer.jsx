@@ -4,8 +4,9 @@ export const Footer = () => {
     return (
         <div id="footer" className="footer">
             <div className="footer-content">
-            <h1>footer yo</h1>
             
+                <p>Designed and built by Rachel McMinn, 2026.</p>
+                <p>All Rights Reserved.</p>
            </div>
           
            
