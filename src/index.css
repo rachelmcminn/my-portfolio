@@ -87,6 +87,7 @@ a {
 a:hover {
   cursor: pointer;
   font-weight: 600;
+  text-decoration: underline;
 }
 
 /* cursor glow effect */
@@ -433,6 +434,7 @@ section#home {
   display: flex;
   flex-direction: row;
   gap: 32px;
+  font-weight: 500;
 }
 
 .about-tech-stack {
@@ -440,6 +442,10 @@ section#home {
   grid-template-columns: repeat(2,minmax(150px,10px));
   list-style-type: none;
   margin-top: 16px;
+}
+
+.tech-stack-item {
+  font-weight: 600;
 }
 
 /*---------------------- contact ---------------------*/

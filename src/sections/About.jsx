@@ -1,5 +1,11 @@
 import React from "react";
 import headshot from '../assets/img/headshot.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+/* import all the icons in Free Solid, Free Regular, and Brands styles */
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { far } from '@fortawesome/free-regular-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
 
 export const About = () => {
 
@@ -22,22 +28,34 @@ export const About = () => {
                     Some technologies I've been working with lately:
                     <ul className="about-tech-stack">
                         <li>
-                            - React
+                            <div className="tech-stack-item">
+                                <FontAwesomeIcon icon="fa-solid fa-caret-right" />React
+                            </div>
                         </li>
                         <li>
-                            - Vite
+                            <div className="tech-stack-item">
+                                <FontAwesomeIcon icon="fa-solid fa-caret-right" />Vite
+                            </div>
                         </li>
                         <li>
-                            - Node.js
+                            <div className="tech-stack-item">
+                                <FontAwesomeIcon icon="fa-solid fa-caret-right" />Node.js
+                            </div>
                         </li>
                         <li>
-                            - Javascript ES6+
+                            <div className="tech-stack-item">
+                                <FontAwesomeIcon icon="fa-solid fa-caret-right" />Javascript ES6+
+                            </div>
                         </li>
                         <li>
-                            - Typescript
+                            <div className="tech-stack-item">
+                                <FontAwesomeIcon icon="fa-solid fa-caret-right" />Typescript
+                            </div>
                         </li>
                         <li>
-                            - OutSystems
+                            <div className="tech-stack-item">
+                                <FontAwesomeIcon icon="fa-solid fa-caret-right" />Python
+                            </div>
                         </li>
                         
                     </ul>
