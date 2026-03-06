@@ -10,28 +10,29 @@ const ProjectCard = ({ title, role, description, builtWith, githubRepoURL, figma
   return (
     <div className="project-card">
       <div className="project-card-content">
+        <div>
         <div className="links-flex">
-           <FontAwesomeIcon icon="fa-solid fa-folder" style={{ fontSize: '30px',  }} className="icons-card-links" />   
+           <FontAwesomeIcon icon="fa-solid fa-folder" style={{ fontSize: '30px', color:'#FECEF1',  }}/>   
           <div>
           <div className="project-card-links">
           {githubRepoURL && (
             <a href={githubRepoURL} target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon="fa-brands fa-github" style={{ fontSize: '24px' }} className="icons-card-links"/>
+              <FontAwesomeIcon icon="fa-brands fa-github" style={{ fontSize: '28px' }} className="icons-card-links"/>
             </a>
           )}
           {figmaURL && figmaURL !== "null" && (
             <a href={figmaURL} target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon="fa-brands fa-figma" style={{ fontSize: '24px' }} className="icons-card-links"/>
+              <FontAwesomeIcon icon="fa-brands fa-figma" style={{ fontSize: '26px' }} className="icons-card-links"/>
             </a>
           )}
           {liveURL && (
             <a href={liveURL} target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon="fa-solid fa-arrow-up-right-from-square" style={{ fontSize: '23px' }} className="icons-card-links"/>
+              <FontAwesomeIcon icon="fa-solid fa-arrow-up-right-from-square" style={{ fontSize: '24px' }} className="icons-card-links"/>
             </a>
           )}
           {appleStoreURL && (
             <a href={appleStoreURL} target="_blank" rel="noreferrer">
-             <FontAwesomeIcon icon="fa-brands fa-app-store" style={{ fontSize: '24px' }} className="icons-card-links"/>
+             <FontAwesomeIcon icon="fa-brands fa-app-store" style={{ fontSize: '28px' }} className="icons-card-links"/>
             </a>
           )}
         </div>
@@ -43,6 +44,8 @@ const ProjectCard = ({ title, role, description, builtWith, githubRepoURL, figma
         <div className="project-card-role">{role}</div>
         <div className="project-card-description">{description}</div>
 
+      </div>
+        
         {builtWith && builtWith.length > 0 && (
           <div className="project-card-tags">
             {builtWith.map((tech) => (

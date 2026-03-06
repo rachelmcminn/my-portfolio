@@ -10,10 +10,6 @@ import { Projects } from './sections/Projects'
 import { Contact } from './sections/Contact'
 import { Footer } from './components/Footer'
 import { FadeSection } from './components/FadeSection'
-// import project pages
-import { IntuneConnect } from './projects/IntuneConnect'
-import { Gremlinizer } from './projects/Gremlinizer'
-import { YippeeSudoku } from './projects/YippeeSudoku'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 /* import all the icons in Free Solid, Free Regular, and Brands styles */
@@ -29,7 +25,6 @@ const MainPage = () => (
     <FadeSection><Home /></FadeSection>
     <FadeSection><About /></FadeSection>
     <FadeSection><Projects /></FadeSection>
-    <FadeSection><Contact /></FadeSection>
     <Footer />
   </div>
 );

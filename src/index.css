@@ -6,10 +6,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --nav-height: 68px;
+  --nav-height: 64px;
   --view-width: 1080px;
 
   --mimi-pink: #FECEF1;
+  --mouse-glow: #802668;
   --night: #121113;
 
   --body-background: #1f111d;
@@ -17,10 +18,14 @@
   --nav-bar-background: #fecef1;
   --nav-link-color: #fecef1;
   --link-color: #fecef1;
-  --mouse-glow: #802668;
   --accent-color: #FFF7CF;
 
-  --card-description: #f1e9ef;
+  --btn-primary-background:#fecef1;
+  --btn-primary-border:#fecef1;
+  --btn-secondary-background: transparent;
+  --btn-secondary-border:#fecef1;
+
+  --card-description: #faf2f8;
   --card-title: #FECEF1;
   --card-background: #7a5f77;
   
@@ -63,7 +68,9 @@ p,div {
 }
 
 .content-section {
-  padding: 6em 3em;
+  max-width: 1100px;
+  margin: auto;
+  padding: 3em 0em;
   height: 100%;
   box-sizing: border-box; 
 
@@ -79,7 +86,7 @@ a {
 }
 a:hover {
   cursor: pointer;
-  text-decoration: underline;
+  font-weight: 600;
 }
 
 /* cursor glow effect */
@@ -140,31 +147,28 @@ a:hover {
   border-radius: 8px;
   font-weight: 500;
   transition: filter .3s ease-in;
+  cursor: pointer;
 }
 
 .btn.btn-primary {
-  background-color: var(--mimi-pink);
-  border: 1px solid var(--mimi-pink);
+  background-color: var(--btn-primary-background);
+  border: 1px solid var(--btn-primary-border);
 }
 
-.btn-primary:hover {
-  filter: brightness(.9);
+.btn.btn-primary:hover {
+  filter: brightness(.85);
 }
 
 
 .btn.btn-secondary {
-  padding: 14px 24px;
-  min-width: 110px;
-  background-color: transparent;
-  border: 1px solid var(--mimi-pink);
-  color: var(--mimi-pink);
-  border-radius: 8px;
-  font-weight: 500;
-  transition: filter .3s ease-in;
+  background-color: var(--btn-secondary-background);
+  border: 1px solid var(--btn-secondary-border);
+  color: var(--btn-secondary-border);
+
 }
 
-.btn-secondary:hover {
-  filter: brightness(.9);
+.btn.btn-secondary:hover {
+  filter: brightness(.85);
 }
 
 
@@ -190,18 +194,22 @@ nav {
 .nav-links {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 24px;
+  font-weight: 500;
+  transition: .3s ease-in-out;
 }
 
 a.nav-link {
   color: var(--nav-link-color);
-  font-size: 20px;
+  font-size: 18px;
+  transition: .3s ease-in-out;
 }
 
 .social-links {
   display: flex;
   flex-direction: row;
-  gap: 16px;
+  gap: 8px;
 }
 
 .mobile-menu-btn {
@@ -239,6 +247,7 @@ a.nav-link {
   width: 100%;
   padding: 24px;
   gap: 8px;
+  justify-content: space-between;
 }
 
 .links-flex {
@@ -246,9 +255,11 @@ a.nav-link {
   justify-content: space-between;
   align-items: center;
 }
+
 .project-card-links {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 4px;
 }
 
@@ -257,16 +268,16 @@ a.nav-link {
   font-size: 26px;
   color: var(--card-title);
   font-weight: 600;
+  margin-top: 8px;
 }
 
 .project-card-role {
-  margin-top: -4px;
   font-weight: 600;
 }
 
 .project-card-description {
   font-size: 16px;
-  margin-bottom: 4px;
+  margin-top: 8px;
   font-weight: 500;
   color: var(--card-description);
 }
@@ -289,11 +300,6 @@ a.nav-link {
 
 .icons-card-links {
   color: #FFF7CF;
-}
-
-/* section styling */
-.content-section {
-  margin: 0em 8em;
 }
 
 .section-title {
@@ -415,14 +421,25 @@ section#home {
 
 /* ---------------------- about -----------------------*/
 .headshot {
-  width: 200px;
-  border-radius: 12px;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 0.46) 6px 13px 23px -5px;
+
 }
 
 .about-me-content {
   display: flex;
   flex-direction: row;
   gap: 32px;
+}
+
+.about-tech-stack {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(150px,10px));
+  list-style-type: none;
+  margin-top: 16px;
 }
 
 /*---------------------- contact ---------------------*/
@@ -449,6 +466,14 @@ section#contact > div {
   text-align: center;
   font-size: 14px;
   
+}
+
+a.footer-contact-link {
+  transition: 3ms ease-in-out;
+}
+
+a.footer-contact-link:hover {
+  font-weight: 500;
 }
 
 

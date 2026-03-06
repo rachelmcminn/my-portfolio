@@ -17,15 +17,28 @@
 // note - could add helper bees & k3 UI/UX work too. wanted to prioritize work with development as well here for this initial version.
 
 export const projectsData = [
-    {
+        {
         id: 'yippee-sudoku',
         title: "Yippee Sudoku!",
-        description: "[In Progress] Personal sudoku project aimed at creating a fun and unique sudoku experience.",
+        description: "[In Progress] Sudoku project for playing sudoku.",
         completionDate: "TBD",
         githubRepoURL: "https://github.com/rachelmcminn/sudoku-game",
         figmaURL: null,
         liveURL: null,
-        role: "Full-Stack Developer",
+        role: "Developer",
+        highlights: [],
+        builtWith: ["React","Vite","HTML", "CSS"],
+        impact: ""
+    },
+    {
+        id: 'my-portfolio-v1',
+        title: "My Portfolio",
+        description: "Personal portfolio project for showcasing my previous work and projects.",
+        completionDate: "TBD",
+        githubRepoURL: "https://github.com/rachelmcminn/my-portfolio",
+        figmaURL: null,
+        liveURL: "https://rachelmcminn.com",
+        role: "Developer",
         highlights: [],
         builtWith: ["React","Vite","HTML", "CSS"],
         impact: ""
@@ -54,7 +67,7 @@ export const projectsData = [
         title: "SLA Insights for JSM",
         description: "Jira Service Management app that displays real-time SLA information directly in the Jira customer portal.",
         completionDate: "February 2025",
-        githubRepoURL: null,
+        githubRepoURL: "https://github.com/rachelmcminn/sla-insights",
         figmaURL: null,
         liveURL: "https://marketplace.atlassian.com/apps/1233330/jsmxtend-sla-insights-for-jira-service-management",
         role: "Full-Stack Developer",
@@ -75,7 +88,7 @@ export const projectsData = [
         completionDate: "June 2024",
         githubRepoURL: null,
         figmaURL: "https://www.figma.com/proto/OSXHD2QDoLN1YVEvHalmGP/RLID-Mockups?node-id=528-8026&p=f&t=84AaSppZVJmWBAal-1&scaling=min-zoom&content-scaling=fixed&page-id=518%3A5790", 
-        liveURL: "",
+        liveURL: "https://beta.rlid.org/Portal/",
         role: "Designer, Front-end Developer, Front-end Mentor",
         madeAt: "T4S Partners",
         highlights: [ 
@@ -90,7 +103,7 @@ export const projectsData = [
     {
         id: 'mbf-photo-stitching',
         title: "MyBrandForce Photo Stitching",
-        description: "Web app that aggregates field merchandiser photos by brand and auto-stitches them into reports using Azure Computer Vision API services.",
+        description: "Web app that aggregates field merchandiser photos by brand and stitches them into reports using Azure Computer Vision API services.",
         completionDate: "October 2024",
         githubRepoURL: null,
         figmaURL: "https://www.figma.com/proto/t7elBMv9LE4TxwBpT6Uflv/Photo-Stitching-UI--Copy-?node-id=33-1859&p=f&t=RPwbBQYBXm0BhGJG-0&scaling=min-zoom&content-scaling=fixed&page-id=33%3A1858", 
