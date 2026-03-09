@@ -10,9 +10,13 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/rachelmcminn/my-portfolio"
-
   },
-  "keywords":["portfolio", "react", "developer", "frontend"],
+  "keywords": [
+    "portfolio",
+    "react",
+    "developer",
+    "frontend"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -29,6 +33,7 @@
     "framer-motion": "^12.23.12",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-responsive": "^10.0.1",
     "react-router-dom": "^7.13.0"
   },
   "devDependencies": {

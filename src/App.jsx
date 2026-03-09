@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useCallback } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import './App.css'
 import './index.css'
@@ -31,6 +31,7 @@ const MainPage = () => (
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
+  const handleComplete = useCallback(() => setIsLoaded(true), []);
   const cursorRef = useRef(null); 
   const location = useLocation();
 
@@ -65,8 +66,8 @@ function App() {
     <>
       <div ref={cursorRef} className="cursor"></div>
       
-      {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
       
+      {!isLoaded && <LoadingScreen onComplete={handleComplete} />}      
       <div className={`item-fade ${isLoaded ? "opacity-100" : "opacity-0"}`}>
         {isLoaded && (
           <div>

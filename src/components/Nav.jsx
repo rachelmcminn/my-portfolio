@@ -32,7 +32,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
           
           {/* desktop nav links */}
           <div className="nav-links">
-            <a href="#" className="nav-link" style={{ fontSize:'20px' }}>Rachel McMinn</a>
+            <a href="#" id="nav-link-main" className="nav-link">Rachel McMinn</a>
             <a href="#home" className="nav-link">Home</a>
             <a href="#about" className="nav-link">About</a>
             <a href="#projects" className="nav-link">Projects</a>

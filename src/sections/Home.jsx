@@ -7,7 +7,7 @@ export const Home = () => {
 
 
     return (
-        <section id="home">
+        <div id="home">
             <img src={spadeBlue} alt="Spade Blue"/>
             <div className="page-title">hi, i'm rachel</div> 
             <div className="page-subtitle">engineer & creative technologist</div>
@@ -17,7 +17,7 @@ export const Home = () => {
             </div>
             
            
-        </section>
+        </div>
     )
 
     

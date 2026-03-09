@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, memo } from "react";
 
-export const LoadingScreen = ({ onComplete }) => {
+export const LoadingScreen = memo(({ onComplete }) => {
     const [text, setText] = useState("");
     const fullText = "<Hello World />";
       
@@ -34,5 +34,4 @@ export const LoadingScreen = ({ onComplete }) => {
         </div>
     );
 
-
-}
+});
