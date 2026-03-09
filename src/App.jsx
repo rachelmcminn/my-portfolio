@@ -30,10 +30,17 @@ const MainPage = () => (
 );
 
 function App() {
-  const [isLoaded, setIsLoaded] = useState(false);
-  const handleComplete = useCallback(() => setIsLoaded(true), []);
   const cursorRef = useRef(null); 
   const location = useLocation();
+  const [isLoaded, setIsLoaded] = useState(
+    () => sessionStorage.getItem('loaded') === 'true'
+  );
+
+  const handleComplete = useCallback(() => {
+    sessionStorage.setItem('loaded', 'true');
+    setIsLoaded(true);
+  }, []);
+
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -66,8 +73,8 @@ function App() {
     <>
       <div ref={cursorRef} className="cursor"></div>
       
-      
-      {!isLoaded && <LoadingScreen onComplete={handleComplete} />}      
+      {!isLoaded && <LoadingScreen onComplete={handleComplete} />}    
+
       <div className={`item-fade ${isLoaded ? "opacity-100" : "opacity-0"}`}>
         {isLoaded && (
           <div>
