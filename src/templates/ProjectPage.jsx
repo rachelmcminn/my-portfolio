@@ -6,9 +6,6 @@ export const ProjectPage = () => {
         <section id="project-page" className="content-section">
            <h1 className="section-title">{}</h1>
 
-         
-         
-          
            
         </section>
     )

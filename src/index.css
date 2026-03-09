@@ -358,16 +358,6 @@ html,
     padding: 16px;
   }
 
-  .more-projects {
-    margin-top: 10rem;
-    padding: 2rem 0;
-    border-top: 1px solid var(--border-color);
-  }
-
-  .more-projects .section-title {
-    margin-bottom: 2rem;
-  }
-
   .view-all-link {
     display: inline-block;
     margin-top: 2rem;
@@ -812,16 +802,6 @@ html,
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 28px;
-  }
-
-  .more-projects {
-    margin-top: 10rem;
-    padding: 2rem 0;
-    border-top: 1px solid var(--border-color);
-  }
-
-  .more-projects .section-title {
-    margin-bottom: 2rem;
   }
 
   .view-all-link {
