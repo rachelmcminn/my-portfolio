@@ -1,8 +1,18 @@
 {
-  "name": "my-portfolio",
+  "name": "rachel-mcminn-portfolio",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "Professional portfolio of Rachel McMinn, frontend engineer",
+  "author": "Rachel McMinn racminn@gmail.com",
+  "license": "MIT",
+  "homepage": "https://rachelmcminn.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rachelmcminn/my-portfolio"
+
+  },
+  "keywords":["portfolio", "react", "developer", "frontend"],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
