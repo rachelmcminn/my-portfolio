@@ -63,7 +63,7 @@ export const About = () => {
             
                 <p> Outside of work, I love <b>hiking, cooking, reading, and playing video games</b> (and sometimes <br/><b>streaming</b> them too!).</p>
           
-                <a href="src/assets/files/Rachel_McMinn_Resume.pdf" target="_blank" rel="noreferrer" style={{marginRight:"16px"}}>
+                <a href="files/Rachel_McMinn_Resume.pdf" target="_blank" rel="noreferrer" style={{marginRight:"16px"}}>
                     <button className="btn btn-primary">Current Resume</button>
                 </a>
                 <a href="mailto:racminn@gmail.com" target="_blank" rel="noreferrer">
