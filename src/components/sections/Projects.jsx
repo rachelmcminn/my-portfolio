@@ -1,9 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ProjectCard from "../components/ProjectCard.jsx";
-import ProjectImgJSM from "../assets/img/princess-mononok-rest.jpg"
-import { projectsData } from "../data/projects.js"
-
+import ProjectCard from "../../components/ProjectCard.jsx";
+import { projectsData } from "../../data/projects.js";
 
 export const Projects = () => {
   return (
