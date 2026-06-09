@@ -36,21 +36,11 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
 
   return (
     <nav>
-      <div className="nav-bar-parent">
-        <div className="nav-bar">
-          <Link to="/" id="nav-link-main" className="nav-link">
+      <div className="nav-bar">
+        <div className="nav-left">
+          <Link to="/" id="nav-link-main" className="nav-link" tabindex="0">
             Rachel McMinn
           </Link>
-
-          {/* <button
-            className="mobile-menu-btn"
-            aria-label="Toggle navigation menu"
-            aria-expanded={menuOpen}
-            aria-controls="primary-nav"
-            onClick={() => setMenuOpen((prev) => !prev)}
-          >
-            &#9776;
-          </button> */}
 
           <div
             id="primary-nav"
@@ -58,26 +48,25 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
           >
             {NAV_ITEMS.map(renderLink)}
           </div>
-
-          <div className="social-links">
-            <a
-              href="https://github.com/rachelmcminn"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Icon icon="fa-brands fa-github" style={{ fontSize: "28px" }} />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/rachelmcminn/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Icon icon="fa-brands fa-linkedin" style={{ fontSize: "28px" }} />
-            </a>
-            <a href="mailto:racminn@gmail.com">
-              <Icon icon="fa-solid fa-envelope" style={{ fontSize: "28px" }} />
-            </a>
-          </div>
+        </div>
+        <div className="social-links">
+          <a
+            href="https://github.com/rachelmcminn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon icon="fa-brands fa-github" style={{ fontSize: "28px" }} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/rachelmcminn/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon icon="fa-brands fa-linkedin" style={{ fontSize: "28px" }} />
+          </a>
+          <a href="mailto:racminn@gmail.com">
+            <Icon icon="fa-solid fa-envelope" style={{ fontSize: "28px" }} />
+          </a>
         </div>
       </div>
     </nav>

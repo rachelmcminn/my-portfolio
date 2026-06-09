@@ -136,7 +136,7 @@ nav {
 
 #nav-link-main {
   display: block;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 a.nav-link {
@@ -145,10 +145,19 @@ a.nav-link {
   transition: 0.3s ease-in-out;
 }
 
-.social-links {
+a.nav-link:hover {
+  color: #c490b6;
+}
+
+div.social-links {
   display: flex;
   flex-direction: row;
   gap: 8px;
+  transition: 0.3s ease-in-out;
+}
+div.nav-bar div.social-links a:hover {
+  transition: 0.3s ease-in-out;
+  color: #c490b6;
 }
 
 /* .mobile-menu-btn {
@@ -328,7 +337,7 @@ div#home {
 }
 
 .page-subtitle {
-  color: #d19fc5;
+  color: #be81af;
   font-size: 20px;
   font-weight: 500;
   margin-top: -5px;
@@ -567,12 +576,18 @@ a.footer-contact-link:hover {
   .nav-bar {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     height: 60px;
     padding: 1em 6em;
     background-color: var(--body-background);
     z-index: 1;
+  }
+
+  .nav-left {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
   }
 
   .nav-overlay {
@@ -599,7 +614,8 @@ a.footer-contact-link:hover {
 
   #nav-link-main {
     display: block;
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: 600;
   }
 
   a.nav-link {
@@ -778,10 +794,10 @@ a.footer-contact-link:hover {
   }
 
   .page-subtitle {
-    color: #e9cae1;
+    color: #be81af;
     font-size: 32px;
     font-weight: 400;
-    margin-top: -24px;
+    margin-top: -18px;
   }
 
   .home-text {
