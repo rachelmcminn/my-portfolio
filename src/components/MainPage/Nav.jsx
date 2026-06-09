@@ -37,17 +37,12 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
   return (
     <nav>
       <div className="nav-bar">
-        <div className="nav-left">
-          <Link to="/" id="nav-link-main" className="nav-link" tabindex="0">
-            Rachel McMinn
-          </Link>
+        <Link to="/" id="nav-link-main" className="nav-link" tabindex="0">
+          Rachel McMinn
+        </Link>
 
-          <div
-            id="primary-nav"
-            className={`nav-links ${menuOpen ? "open" : ""}`}
-          >
-            {NAV_ITEMS.map(renderLink)}
-          </div>
+        <div id="primary-nav" className={`nav-links ${menuOpen ? "open" : ""}`}>
+          {NAV_ITEMS.map(renderLink)}
         </div>
         <div className="social-links">
           <a
