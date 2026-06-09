@@ -1,4 +1,3 @@
-import React from "react";
 import spadeBlue from "../../assets/img/spade-blue.png";
 
 export const Home = () => {
@@ -12,7 +11,7 @@ export const Home = () => {
 
       <div className="home-text">
         I'm a problem solver at heart and a lifelong observer of human nature. I
-        strive to create online spaces that are well designed, accessible and
+        strive to create online spaces that are intuitive, accessible and
         enjoyable to experience.
       </div>
     </div>

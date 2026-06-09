@@ -1,4 +1,3 @@
-import React from "react";
 import headshot from "../../assets/img/headshot.jpg";
 import Button from "../Button/Button.jsx";
 import TechStackItem from "../TechStackItem.jsx";
@@ -43,10 +42,9 @@ export const About = () => {
           </div>
 
           <p>
-            {" "}
-            Outside of work, I love hiking, cooking, reading, and playing video
-            games (and sometimes <br />
-            streaming them too!).
+            Outside of software development I am working towards becoming a yoga
+            instructor, reading nature books, and playing video games (and
+            sometimes streaming them too!).
           </p>
 
           <a

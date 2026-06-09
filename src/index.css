@@ -35,6 +35,7 @@ body {
   font-family: "Figtree", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  overflow-x: hidden;
 }
 
 h1,
@@ -58,6 +59,7 @@ div {
 .main-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .content-section {
@@ -113,18 +115,28 @@ nav {
   background-color: var(--body-background);
   z-index: 1;
 }
-
-.nav-links {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 20px;
-  font-weight: 500;
-  transition: 0.3s ease-in-out;
+.nav-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 20;
 }
 
-#nav-link-main {
+.nav-links {
   display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  font-weight: 500;
+}
+
+/* .nav-links.open {
+  transform: translateX(0);
+} */
+
+#nav-link-main {
+  display: block;
+  font-size: 20px;
 }
 
 a.nav-link {
@@ -139,9 +151,17 @@ a.nav-link {
   gap: 8px;
 }
 
-.mobile-menu-btn {
-  display: none;
-}
+/* .mobile-menu-btn {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: var(--nav-link-color);
+  font-size: 28px;
+  cursor: pointer;
+  padding: 0;
+  z-index: 31; /* above the drawer so it stays tappable to close 
+}*/
 
 .github-icon,
 .linkedin-icon {
@@ -288,7 +308,7 @@ a.nav-link {
 
 /* home */
 div#home {
-  height: 80vh;
+  height: 60vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -297,17 +317,23 @@ div#home {
   margin-top: 40px;
 }
 
+#home img {
+  height: 90px;
+}
+
 .page-title {
-  font-size: 52px;
+  font-size: 40px;
   margin: 0px;
   font-weight: 500;
 }
 
 .page-subtitle {
-  color: #e9cae1;
-  font-size: 24px;
-  font-weight: 400;
-  margin-top: -24px;
+  color: #d19fc5;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: -5px;
+  line-height: normal;
+  text-align: center;
 }
 
 .home-text {
@@ -315,12 +341,14 @@ div#home {
   text-align: center;
   font-size: 16px;
   font-weight: 300;
-  margin-top: 8px;
+  margin: 8px 28px;
 }
 
 /* --------------------- projects ----------------------- */
 #projects.content-section {
-  margin-bottom: 40px;
+  margin-bottom: 3em;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 .project-grid {
   display: grid;
@@ -368,6 +396,7 @@ div#home {
 
 .tech-stack-item {
   font-weight: 600;
+  white-space: nowrap;
 }
 
 #about-me-text {
@@ -390,9 +419,10 @@ section#contact > div {
 }
 
 /* -------------------------- footer ---------------------------- */
-.footer {
+#footer {
   padding: 3em 0em;
   background-color: #2a1725;
+  width: 100%;
 }
 
 .footer-content {
@@ -526,7 +556,7 @@ a.footer-contact-link:hover {
     opacity: 1;
   }
 
-  /*  Nav */
+  /*  min1024px  -  Nav */
   nav {
     position: fixed;
     top: 0;
@@ -545,6 +575,10 @@ a.footer-contact-link:hover {
     z-index: 1;
   }
 
+  .nav-overlay {
+    display: none;
+  }
+
   .nav-links {
     display: flex;
     flex-direction: row;
@@ -552,6 +586,15 @@ a.footer-contact-link:hover {
     gap: 24px;
     font-weight: 500;
     transition: 0.3s ease-in-out;
+    /* undo the mobile drawer */
+    position: static;
+    height: auto;
+    width: auto;
+    padding: 0;
+    background: none;
+    border-left: none;
+    transform: none;
+    z-index: auto;
   }
 
   #nav-link-main {
@@ -798,6 +841,7 @@ a.footer-contact-link:hover {
 
   .tech-stack-item {
     font-weight: 600;
+    white-space: nowrap;
   }
 
   /*---------------------- contact ---------------------*/

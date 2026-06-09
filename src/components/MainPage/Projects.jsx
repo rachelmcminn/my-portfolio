@@ -1,6 +1,4 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import ProjectCard from "../../components/ProjectCard.jsx";
+import ProjectCard from "../ProjectCard.jsx";
 import { projectsData } from "../../data/projects.js";
 
 export const Projects = () => {
@@ -11,6 +9,7 @@ export const Projects = () => {
         <div className="project-grid">
           {projectsData.map((project) => (
             <ProjectCard
+              key={project.title}
               title={project.title}
               role={project.role}
               description={project.description}
